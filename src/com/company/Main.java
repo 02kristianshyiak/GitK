@@ -8,8 +8,12 @@ public class Main {
 	Scanner user_input = new Scanner(System.in);
 
 	String first_name;
-	System.out.print("What is your name? ");
+	System.out.print("What is your first name? ");
 	first_name = user_input.next();
+
+	String last_name;
+	System.out.print("What is your last name? ");
+	last_name = user_input.next();
 
 	String family_name;
 	System.out.print("What coffee do you want? ");
@@ -23,9 +27,8 @@ public class Main {
 	System.out.print("How many shots of expresso do you want? ");
 	shots = user_input.next();
 
-	String full_name;
-	full_name = first_name + " " + family_name;
 
-	System.out.println("You are " + full_name);
+
+	System.out.println("Hello " + first_name + " " + last_name + " we have your " + size + " "+ family_name + " with " + shots + " of expresso.");
     }
 }
