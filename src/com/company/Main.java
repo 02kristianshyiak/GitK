@@ -20,15 +20,14 @@ public class Main {
 	family_name = user_input.next();
 
 	String size;
-	System.out.print("What size do you want? (Large, Medium, Small) ");
+	System.out.print("What size do you want? (Large, Medium, Small): ");
 	size = user_input.next();
 
 	String shots;
 	System.out.print("How many shots of expresso do you want? ");
 	shots = user_input.next();
-
-
-
+	
 	System.out.println("Hello " + first_name + " " + last_name + " we have your " + size + " "+ family_name + " with " + shots + " shots of expresso.");
+
     }
 }
