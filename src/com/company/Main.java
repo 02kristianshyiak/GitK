@@ -16,7 +16,7 @@ public class Main {
 	last_name = user_input.next();
 
 	String family_name;
-	System.out.print("What coffee do you want? ");
+	System.out.print("What coffee do you want? (Cortado, Affogato, Doppio): ");
 	family_name = user_input.next();
 
 	String size;
@@ -29,6 +29,6 @@ public class Main {
 
 
 
-	System.out.println("Hello " + first_name + " " + last_name + " we have your " + size + " "+ family_name + " with " + shots + " of expresso.");
+	System.out.println("Hello " + first_name + " " + last_name + " we have your " + size + " "+ family_name + " with " + shots + " shots of expresso.");
     }
 }
