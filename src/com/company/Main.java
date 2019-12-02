@@ -23,7 +23,7 @@ public class Main {
 	System.out.print("Would you like cream? ");
 	cream =  user_input.next();
 
-	String size;
+	String size;     
 	System.out.print("What size do you want? (Large, Medium, Small) ");
 	size = user_input.next();
 
