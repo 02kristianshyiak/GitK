@@ -16,7 +16,7 @@ public class Main {
 	last_name = user_input.next();
 
 	String family_name;
-	System.out.print("What coffee do you want?(mocha, macchiato, or black) ");
+	System.out.print("What coffee do you want?(mocha, macchiato, decaf, latte, frappe, americano, cappuccino, or black) ");
 	family_name = user_input.next();
 
 	String cream;
