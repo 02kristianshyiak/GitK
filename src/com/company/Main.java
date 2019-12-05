@@ -12,7 +12,7 @@ public class Main {
 	first_name = sc.nextLine();
 
 	String family_name;
-	System.out.print("What coffee do you want? (Cortado, Affogato, Doppio)(Start with a capital please): ");
+	System.out.print("What coffee do you want? (Cortado, Affogato, Doppio, Latte, Irish Coffee)(Start with a capital please): ");
 	family_name = sc.nextLine();
 
 	String size;
@@ -31,6 +31,7 @@ public class Main {
 		original_price = 3.99;
 		System.out.println("That'll be " + original_price);
 	}
+
 	if(family_name.equals("Affogato")) {
 		original_price = 4.75;
 		System.out.println("That'll be " + original_price);
@@ -41,12 +42,41 @@ public class Main {
 		System.out.println("That'll be " + original_price);
 	}
 
+		if(family_name.equals("Latte")) {
+			original_price = 2.95;
+			System.out.println("That'll be " + original_price);
+		}
+
+		if(family_name.equals("Irish Coffee")) {
+			original_price = 6.99;
+			System.out.println("That'll be " + original_price);
+		}
+
 		if(shots.equals("1")) {
-		System.out.println("plus 1.20 for the shot of espresso");
+		System.out.println("plus 1.20 for a shot of espresso");
 		original_price = original_price + 1.20;
 	}
 
+		if(shots.equals("2")) {
+			System.out.println("plus 2.40 for the shots of espresso");
+			original_price = original_price + 2.40;
+		}
 
-	System.out.println(original_price);
+		if(shots.equals("3")) {
+			System.out.println("plus 3.60 for the shots of espresso");
+			original_price = original_price + 3.60;
+		}
+
+		if(shots.equals("4")) {
+			System.out.println("plus 4.80 for the shots of espresso");
+			original_price = original_price + 4.80;
+		}
+
+		if(shots.equals("5")) {
+			System.out.println("plus 6.00 for the shots of espresso");
+			original_price = original_price + 6.00;
+		}
+
+	System.out.println("$" + original_price);
     }
 }
