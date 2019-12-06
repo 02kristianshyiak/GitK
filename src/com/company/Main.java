@@ -11,8 +11,10 @@ public class Main {
 	System.out.print("What is your name? ");
 	first_name = sc.nextLine();
 
+	System.out.println("Coffee Types: Cortado, Affogato, Doppio, Latte, Irish Coffee, Turkish Coffee (Start with a capital please)");
+
 	String family_name;
-	System.out.print("What coffee do you want? (Cortado, Affogato, Doppio, Latte, Irish Coffee)(Start with a capital please): ");
+	System.out.print("What coffee do you want? ");
 	family_name = sc.nextLine();
 
 	String size;
@@ -20,7 +22,7 @@ public class Main {
 	size = sc.nextLine();
 
 	String shots;
-	System.out.print("How many shots of espresso do you want? ");
+	System.out.print("How many shots of espresso do you want?(Up to five shots) ");
 	shots = sc.nextLine();
 
 	System.out.println("Hello " + first_name + " we have your " + size + " "+ family_name + " with " + shots + " shots of espresso.");
@@ -52,6 +54,11 @@ public class Main {
 			System.out.println("That'll be " + original_price);
 		}
 
+		if(family_name.equals("Turkish Coffee")) {
+			original_price = 2.89;
+			System.out.println("That'll be " + original_price);
+		}
+
 		if(shots.equals("1")) {
 		System.out.println("plus 1.20 for a shot of espresso");
 		original_price = original_price + 1.20;
@@ -80,3 +87,4 @@ public class Main {
 	System.out.println("$" + original_price);
     }
 }
+
