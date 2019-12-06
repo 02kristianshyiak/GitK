@@ -28,11 +28,11 @@ public class Main {
 	size = user_input.next();
 
 	String shots;
-	System.out.print("How many shots of expresso do you want? ");
+	System.out.print("How many shots of espresso do you want? ");
 	shots = user_input.next();
 
 
 
-	System.out.println("Hello " + first_name + " " + last_name + " we have your " + size + " "+ family_name + " with " + shots + " shots of expresso and you replied " + cream + " for cream so here you are. Have a great day!");
+	System.out.println("Hello " + first_name + " " + last_name + " we have your " + size + " "+ family_name + " with " + shots + " shots of espresso and you replied " + cream + " for cream so here you are. Have a great day!");
     }
 }
