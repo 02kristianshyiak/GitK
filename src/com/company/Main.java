@@ -11,7 +11,7 @@ public class Main {
 	System.out.print("What is your name? ");
 	first_name = sc.nextLine();
 
-	System.out.println("Coffee Types: Cortado, Affogato, Doppio, Latte, Irish Coffee, Turkish Coffee (Start with a capital please)");
+	System.out.println("Coffee Types: Cortado, Affogato, Doppio, Latte, Irish Coffee, Turkish Coffee, Caffe Americano (Start with a capital please)");
 
 	String family_name;
 	System.out.print("What coffee do you want? ");
@@ -56,6 +56,11 @@ public class Main {
 
 		if(family_name.equals("Turkish Coffee")) {
 			original_price = 2.89;
+			System.out.println("That'll be " + original_price);
+		}
+
+		if(family_name.equals("Caffe Americano")) {
+			original_price = 2.25;
 			System.out.println("That'll be " + original_price);
 		}
 
