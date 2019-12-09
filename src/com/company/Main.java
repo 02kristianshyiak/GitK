@@ -11,7 +11,7 @@ public class Main {
 	System.out.print("What is your name? ");
 	first_name = sc.nextLine();
 
-	System.out.println("Coffee Types: Cortado, Affogato, Doppio, Latte, Irish Coffee, Turkish Coffee, Caffe Americano (Start with a capital please)");
+	System.out.println("Coffee Types: Cortado, Affogato, Doppio, Latte, Irish Coffee, Turkish Coffee, Caffe Americano");
 
 	String family_name;
 	System.out.print("What coffee do you want? ");
@@ -64,32 +64,48 @@ public class Main {
 			System.out.println("That'll be " + original_price);
 		}
 
+		if(size.equals("Large") || size.equals("large")){
+			System.out.println("plus 4.50 for the size");
+			original_price = original_price + 4.5;
+		}
+
+		if(size.equals("Medium") || size.equals("medium")){
+			System.out.println("plus 4.25 for the size");
+			original_price = original_price + 4.25;
+		}
+
+		if(size.equals("Small") || size.equals("small")){
+			System.out.println("plus 4.00 for the size");
+			original_price = original_price + 4;
+		}
+
 		if(shots.equals("1")) {
 		System.out.println("plus 1.20 for a shot of espresso");
-		original_price = original_price + 1.20;
+		original_price = original_price + 1.2;
 	}
 
 		if(shots.equals("2")) {
 			System.out.println("plus 2.40 for the shots of espresso");
-			original_price = original_price + 2.40;
+			original_price = original_price + 2.4;
 		}
 
 		if(shots.equals("3")) {
 			System.out.println("plus 3.60 for the shots of espresso");
-			original_price = original_price + 3.60;
+			original_price = original_price + 3.6;
 		}
 
 		if(shots.equals("4")) {
 			System.out.println("plus 4.80 for the shots of espresso");
-			original_price = original_price + 4.80;
+			original_price = original_price + 4.8;
 		}
 
 		if(shots.equals("5")) {
 			System.out.println("plus 6.00 for the shots of espresso");
-			original_price = original_price + 6.00;
+			original_price = original_price + 6;
 		}
 
-	System.out.println("$" + original_price);
+	original_price = Math.round(original_price * 100)/100;
+	System.out.printf("$" + original_price);
     }
 }
 
