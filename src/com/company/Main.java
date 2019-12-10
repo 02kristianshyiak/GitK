@@ -66,7 +66,7 @@ public class Main {
 
 		if(size.equals("Large") || size.equals("large")){
 			System.out.println("plus 4.50 for the size");
-			original_price = original_price + 4.5;
+			original_price = original_price + 4.50;
 		}
 
 		if(size.equals("Medium") || size.equals("medium")){
@@ -76,36 +76,35 @@ public class Main {
 
 		if(size.equals("Small") || size.equals("small")){
 			System.out.println("plus 4.00 for the size");
-			original_price = original_price + 4;
+			original_price = original_price + 4.00;
 		}
 
 		if(shots.equals("1")) {
 		System.out.println("plus 1.20 for a shot of espresso");
-		original_price = original_price + 1.2;
+		original_price = original_price + 1.20;
 	}
 
 		if(shots.equals("2")) {
 			System.out.println("plus 2.40 for the shots of espresso");
-			original_price = original_price + 2.4;
+			original_price = original_price + 2.40;
 		}
 
 		if(shots.equals("3")) {
 			System.out.println("plus 3.60 for the shots of espresso");
-			original_price = original_price + 3.6;
+			original_price = original_price + 3.60;
 		}
 
 		if(shots.equals("4")) {
 			System.out.println("plus 4.80 for the shots of espresso");
-			original_price = original_price + 4.8;
+			original_price = original_price + 4.80;
 		}
 
 		if(shots.equals("5")) {
 			System.out.println("plus 6.00 for the shots of espresso");
-			original_price = original_price + 6;
+			original_price = original_price + 6.00;
 		}
 
-	original_price = Math.round(original_price * 100)/100;
-	System.out.printf("$" + original_price);
+	System.out.println("$" + original_price);
     }
 }
 
