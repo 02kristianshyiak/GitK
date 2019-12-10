@@ -10,6 +10,7 @@ public class Main {
 	String first_name;
 	System.out.print("What is your name? ");
 	first_name = sc.nextLine();
+	first_name = first_name.toUpperCase();
 
 	System.out.println("Coffee Types: Cortado, Affogato, Doppio, Latte, Irish Coffee, Turkish Coffee, Caffe Americano");
 
