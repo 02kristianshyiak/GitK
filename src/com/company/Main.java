@@ -11,7 +11,7 @@ public class Main {
 	System.out.print("What is your name? ");
 	first_name = sc.nextLine();
 
-	System.out.println("Coffee Types: Cortado, Affogato, Doppio, Latte, Irish Coffee, Turkish Coffee, Caffe Americano");
+	System.out.println("Coffee Types: Cortado, Affogato, Doppio, Latte, Irish Coffee, Turkish Coffee, Caffe Americano, Christmas Special: Eggnog");
 
 	String family_name;
 	System.out.print("What coffee do you want? ");
@@ -25,7 +25,11 @@ public class Main {
 	System.out.print("How many shots of espresso do you want?(Up to five shots) ");
 	shots = sc.nextLine();
 
-	System.out.println("Hello " + first_name + " we have your " + size + " "+ family_name + " with " + shots + " shots of espresso.");
+	String cream;
+	System.out.print("Would you like cream with that? ");
+	cream = sc.nextLine();
+
+	System.out.println("Hello " + first_name + " we have your " + size + " " + family_name + " with " + shots + " shots of espresso and you said " + cream + " to cream.");
 
 	double original_price = 0;
 
@@ -64,9 +68,14 @@ public class Main {
 			System.out.println("That'll be " + original_price);
 		}
 
+		if(family_name.equals("Eggnog") || family_name.equals("eggnog")) {
+			original_price = 3.50;
+			System.out.println("That'll be " + original_price);
+		}
+
 		if(size.equals("Large") || size.equals("large")){
 			System.out.println("plus 2.09 for the size");
-			original_price = original_price + 2.09;
+			original_price = original_price + 2.19;
 		}
 
 		if(size.equals("Medium") || size.equals("medium")){
@@ -104,7 +113,9 @@ public class Main {
 			original_price = original_price + 6.00;
 		}
 
-	System.out.println("$" + original_price);
+    double roundOff = (double) Math.round(original_price * 100)/100;
+	System.out.println("Total Price: $" + original_price);
+	System.out.println("Have a great day and Merry Christmas to you.");
     }
 }
 
