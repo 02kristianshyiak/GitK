@@ -65,18 +65,18 @@ public class Main {
 		}
 
 		if(size.equals("Large") || size.equals("large")){
-			System.out.println("plus 4.50 for the size");
-			original_price = original_price + 4.50;
+			System.out.println("plus 2.50 for the size");
+			original_price = original_price + 2.50;
 		}
 
 		if(size.equals("Medium") || size.equals("medium")){
-			System.out.println("plus 4.25 for the size");
-			original_price = original_price + 4.25;
+			System.out.println("plus 2.25 for the size");
+			original_price = original_price + 2.25;
 		}
 
 		if(size.equals("Small") || size.equals("small")){
-			System.out.println("plus 4.00 for the size");
-			original_price = original_price + 4.00;
+			System.out.println("plus 2.00 for the size");
+			original_price = original_price + 2.00;
 		}
 
 		if(shots.equals("1")) {
