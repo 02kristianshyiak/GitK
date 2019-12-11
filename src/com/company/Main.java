@@ -14,9 +14,9 @@ public class Main {
 
 	System.out.println("Coffee Types: Cortado, Affogato, Doppio, Latte, Irish Coffee, Turkish Coffee, Caffe Americano, Cappuccino, Caffe Mocha, Iced Coffee, Christmas Special: Eggnog");
 
-	String family_name;
+	String coffee;
 	System.out.print("What coffee do you want? ");
-	family_name = sc.nextLine();
+	coffee = sc.nextLine();
 
 	String size;
 	System.out.print("What size do you want? (Large, Medium, Small): ");
@@ -30,61 +30,61 @@ public class Main {
 	System.out.print("Would you like cream with that? ");
 	cream = sc.nextLine();
 
-	System.out.println("Hello " + first_name + " we have your " + size + " " + family_name + " with " + shots + " shots of espresso and you said " + cream + " to cream.");
+	System.out.println("Hello " + first_name + " we have your " + size + " " + coffee + " with " + shots + " shots of espresso and you said " + cream + " to cream.");
 
 	double original_price = 0;
 
-	if(family_name.equals("Cortado") || family_name.equals("cortado")){
+	if(coffee.equals("Cortado") || coffee.equals("cortado")){
 		original_price = 3.99;
 		System.out.println("That'll be " + original_price);
 	}
 
-	if(family_name.equals("Affogato") || family_name.equals("affogato")) {
+	if(coffee.equals("Affogato") || coffee.equals("affogato")) {
 		original_price = 4.75;
 		System.out.println("That'll be " + original_price);
 	}
 
-	if(family_name.equals("Doppio") || family_name.equals("doppio")) {
+	if(coffee.equals("Doppio") || coffee.equals("doppio")) {
 		original_price = 3.25;
 		System.out.println("That'll be " + original_price);
 	}
 
-		if(family_name.equals("Latte") || family_name.equals("latte")) {
+		if(coffee.equals("Latte") || coffee.equals("latte")) {
 			original_price = 2.95;
 			System.out.println("That'll be " + original_price);
 		}
 
-		if(family_name.equals("Irish Coffee") || family_name.equals("irish coffee")) {
+		if(coffee.equals("Irish Coffee") || coffee.equals("irish coffee")) {
 			original_price = 6.99;
 			System.out.println("That'll be " + original_price);
 		}
 
-		if(family_name.equals("Turkish Coffee") || family_name.equals("turkish coffee")) {
+		if(coffee.equals("Turkish Coffee") || coffee.equals("turkish coffee")) {
 			original_price = 2.89;
 			System.out.println("That'll be " + original_price);
 		}
 
-		if(family_name.equals("Caffe Americano") || family_name.equals("caffe americano")) {
+		if(coffee.equals("Caffe Americano") || coffee.equals("caffe americano")) {
 			original_price = 2.25;
 			System.out.println("That'll be " + original_price);
 		}
 
-		if(family_name.equals("Cappuccino") || family_name.equals("cappuccino")) {
+		if(coffee.equals("Cappuccino") || coffee.equals("cappuccino")) {
 			original_price = 3.65;
 			System.out.println("That'll be " + original_price);
 		}
 
-		if(family_name.equals("Caffe Mocha") || family_name.equals("caffe mocha")) {
+		if(coffee.equals("Caffe Mocha") || coffee.equals("caffe mocha")) {
 			original_price = 4.15;
 			System.out.println("That'll be " + original_price);
 		}
 
-		if(family_name.equals("Iced Coffee") || family_name.equals("iced coffee")) {
+		if(coffee.equals("Iced Coffee") || coffee.equals("iced coffee")) {
 			original_price = 2.25;
 			System.out.println("That'll be " + original_price);
 		}
 
-		if(family_name.equals("Eggnog") || family_name.equals("eggnog")) {
+		if(coffee.equals("Eggnog") || coffee.equals("eggnog")) {
 			original_price = 3.50;
 			System.out.println("That'll be " + original_price);
 		}
