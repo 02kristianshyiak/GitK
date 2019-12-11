@@ -12,7 +12,7 @@ public class Main {
 	first_name = sc.nextLine();
 	first_name = first_name.toUpperCase();
 
-	System.out.println("Coffee Types: Cortado, Affogato, Doppio, Latte, Irish Coffee, Turkish Coffee, Caffe Americano, Christmas Special: Eggnog");
+	System.out.println("Coffee Types: Cortado, Affogato, Doppio, Latte, Irish Coffee, Turkish Coffee, Caffe Americano, Cappuccino, Caffe Mocha, Iced Coffee, Christmas Special: Eggnog");
 
 	String family_name;
 	System.out.print("What coffee do you want? ");
@@ -65,6 +65,21 @@ public class Main {
 		}
 
 		if(family_name.equals("Caffe Americano") || family_name.equals("caffe americano")) {
+			original_price = 2.25;
+			System.out.println("That'll be " + original_price);
+		}
+
+		if(family_name.equals("Cappuccino") || family_name.equals("cappuccino")) {
+			original_price = 3.65;
+			System.out.println("That'll be " + original_price);
+		}
+
+		if(family_name.equals("Caffe Mocha") || family_name.equals("caffe mocha")) {
+			original_price = 4.15;
+			System.out.println("That'll be " + original_price);
+		}
+
+		if(family_name.equals("Iced Coffee") || family_name.equals("iced coffee")) {
 			original_price = 2.25;
 			System.out.println("That'll be " + original_price);
 		}
