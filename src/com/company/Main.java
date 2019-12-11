@@ -113,9 +113,8 @@ public class Main {
 			original_price = original_price + 6.00;
 		}
 
-    double roundOff = (double) Math.round(original_price * 100)/100;
+		original_price = Math.round(original_price * 100.0)/100.0;
 	System.out.println("Total Price: $" + original_price);
 	System.out.println("Have a great day and Merry Christmas to you.");
     }
 }
-
