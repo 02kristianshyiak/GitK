@@ -7,6 +7,8 @@ public class Main {
     public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 
+	System.out.println("Welcome to Advanced Coffee System or ACS!");
+
 	String first_name;
 	System.out.print("What is your name? ");
 	first_name = sc.nextLine();
