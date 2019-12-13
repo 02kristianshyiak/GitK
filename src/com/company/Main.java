@@ -32,8 +32,13 @@ public class Main {
 	System.out.print("Would you like cream with that? ");
 	cream = sc.nextLine();
 
-	System.out.println("Hello " + first_name + " we have your " + size + " " + coffee + " with " + shots + " shots of espresso and you said " + cream + " to cream.");
+	String cups;
+	System.out.println("How many cups would you like? ");
+	cups = sc.nextLine();
 
+	System.out.println("Hello " + first_name + " we have your " + size + " " + coffee + " with " + shots + " shots of espresso and you said " + cream + " to cream and " + cups + " cups of coffee.");
+
+	double Cups = String cups;
 	double original_price = 0;
 	double estimated_time = 0;
 	double seconds = 0;
@@ -163,7 +168,7 @@ public class Main {
 		}
 
 		original_price = Math.round(original_price * 100.0)/100.0;
-	System.out.println("Total Price: $" + original_price);
+	System.out.println("Total Price: $" + original_price * Cups);
 	System.out.println("It'll be ready in " + estimated_time + " minutes and " + seconds + " sceonds.");
 	System.out.println("Have a great day and Merry Christmas to you.");
     }
