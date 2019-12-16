@@ -33,12 +33,11 @@ public class Main {
 	cream = sc.nextLine();
 
 	String cups;
-	System.out.println("How many cups would you like? ");
+	System.out.println("How many cups would you like?(Up to five cups) ");
 	cups = sc.nextLine();
 
 	System.out.println("Hello " + first_name + " we have your " + size + " " + coffee + " with " + shots + " shots of espresso and you said " + cream + " to cream and " + cups + " cups of coffee.");
 
-	double Cups = String cups;
 	double original_price = 0;
 	double estimated_time = 0;
 	double seconds = 0;
@@ -167,8 +166,33 @@ public class Main {
 			original_price = original_price + 6.00;
 		}
 
+		if(cups.equals("1")) {
+			System.out.println("And you have 1 cup of that.");
+			original_price = original_price * 1;
+		}
+
+		if(cups.equals("2")) {
+			System.out.println("And you have 2 cup2 of that.");
+			original_price = original_price * 2;
+		}
+
+		if(cups.equals("3")) {
+			System.out.println("And you have 3 cups of that.");
+			original_price = original_price * 3;
+		}
+
+		if(cups.equals("4")) {
+			System.out.println("And you have 4 cups of that.");
+			original_price = original_price * 4;
+		}
+
+		if(cups.equals("5")) {
+			System.out.println("And you have 5 cups of that.");
+			original_price = original_price * 5;
+		}
+
 		original_price = Math.round(original_price * 100.0)/100.0;
-	System.out.println("Total Price: $" + original_price * Cups);
+	System.out.println("Total Price: $" + original_price);
 	System.out.println("It'll be ready in " + estimated_time + " minutes and " + seconds + " sceonds.");
 	System.out.println("Have a great day and Merry Christmas to you.");
     }
